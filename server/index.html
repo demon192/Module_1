@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h2>What can JavaScript do?</h2>
+    <p id="demo">JavaScript can change HTML content</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Hello JavaScript!'">Click Me!</button>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Change size by clicking here</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Hide it</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='block'">Show Here</button>
+    <h2>JavaScript in Body</h2>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo2').innerHTML='Hello I am here!';
+    </script>
+    <button type="button" onclick="myFunction()">Try it here</button>
+    <button type="button" onclick="document.write('hiii')">touch here</button>
+    <script>
+        window.alert('hello');
+    </script>
+    <script>
+        console.log(7+8);
+    </script>
+    <button onclick="window.print()">Print page here</button>
+    
+    <script>
+        let x,y,z;
+        x=6;
+        y=7
+        z=x+y;
+        console.log(z);
+    </script>
+    <p id="demo3"></p>
+    <script>
+        var name="Ishu", age=19, feeling="dizzy";
+        document.getElementById('demo3').innerHTML='Hii '+name+' My age is '+age;
+    </script>
+    <p id="demo4"></p>
+    <script>
+        const cars = ['mercedes','volvo','swift'];
+        cars[0]='suzuki';
+        cars.push('kia');
+        document.getElementById('demo4').innerHTML=cars;
+    </script>
+    <p id="demo5"></p>
+    <script>
+        const car ={type:'Fiat',model:'500',color:'white'};
+        car.color='red';
+        car.owner='ishu';
+        document.getElementById('demo5').innerHTML='Car Owner is '+car.owner;
+    </script>
+</body>
+</html>
